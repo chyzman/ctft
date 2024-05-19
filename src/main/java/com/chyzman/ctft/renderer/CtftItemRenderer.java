@@ -1,8 +1,8 @@
 package com.chyzman.ctft.renderer;
 
 import com.chyzman.ctft.client.TransformingVertexConsumer;
-import com.chyzman.ctft.mixin.CameraAccessor;
-import com.chyzman.ctft.mixin.ParticleManagerAccessor;
+import com.chyzman.ctft.mixin.client.CameraAccessor;
+import com.chyzman.ctft.mixin.client.ParticleManagerAccessor;
 import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -24,20 +24,13 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.command.argument.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.nbt.StringNbtReader;
-import net.minecraft.nbt.visitor.StringNbtWriter;
-import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
-import net.minecraft.util.math.Vec3d;
-import org.joml.Matrix4f;
 import org.joml.Quaternionf;
 import org.joml.Random;
 

@@ -1,5 +1,6 @@
 package com.chyzman.ctft.mixin;
 
+import com.chyzman.ctft.item.CtftItem;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ItemEntity;
@@ -28,7 +29,7 @@ public abstract class ItemEntityMixin {
 
     @Inject(method = "isFireImmune", at = @At("HEAD"), cancellable = true)
     public void noBurny(CallbackInfoReturnable<Boolean> cir) {
-        if (!Registries.ITEM.getId(getStack().getItem()).getNamespace().equals(MODID)) cir.cancel();
+        if (!(getStack().getItem() instanceof CtftItem)) return;
         if (getStack().getNbt() != null && getStack().getNbt().getString("material") != null) {
             if (getStack().getNbt().getString("material").equals("random")) {
                 cir.setReturnValue(new Random().nextBoolean());

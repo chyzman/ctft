@@ -63,7 +63,7 @@ public abstract class ItemStackMixin {
         if (!Registries.ITEM.getId(getItem()).getNamespace().equals(MODID)) return;
         if (getNbt() != null && getNbt().getString("material") != null) {
             if (getNbt().getString("material").equals("random")) {
-                cir.setReturnValue(new Random().nextInt(getDamage(), 100));
+                cir.setReturnValue(new Random().nextInt(Math.min(99, getDamage()), 100));
             }
             var id = Identifier.tryParse(getNbt().getString("material"));
             if (id == null) return;

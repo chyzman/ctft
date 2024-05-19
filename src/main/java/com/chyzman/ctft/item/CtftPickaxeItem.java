@@ -26,7 +26,7 @@ import java.util.Optional;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftPickaxeItem extends PickaxeItem {
+public class CtftPickaxeItem extends PickaxeItem implements CtftItem {
     public CtftPickaxeItem(Settings settings) {
         super(CtftMaterial.CTFT,
                 0,

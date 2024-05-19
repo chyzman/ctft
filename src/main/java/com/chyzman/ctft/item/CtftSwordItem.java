@@ -29,7 +29,7 @@ import java.util.Random;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftSwordItem extends SwordItem {
+public class CtftSwordItem extends SwordItem implements CtftItem {
     public CtftSwordItem(Settings settings) {
         super(
                 CtftMaterial.CTFT,

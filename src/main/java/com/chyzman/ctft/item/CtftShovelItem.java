@@ -28,7 +28,7 @@ import java.util.Random;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftShovelItem extends ShovelItem {
+public class CtftShovelItem extends ShovelItem implements CtftItem {
     public CtftShovelItem(Settings settings) {
         super(CtftMaterial.CTFT,
                 0,

@@ -1,4 +1,4 @@
-package com.chyzman.ctft.mixin;
+package com.chyzman.ctft.mixin.client;
 
 import net.minecraft.client.render.Camera;
 import net.minecraft.util.math.Vec3d;

@@ -3,8 +3,18 @@
   "minVersion": "0.8",
   "package": "com.chyzman.ctft.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": ["CameraAccessor", "ItemAccessor", "ItemEntityMixin", "ItemStackMixin", "ParticleManagerAccessor", "ShapedRecipeAccessor", "SheepShearingMixin"],
+  "mixins": [
+    "ItemAccessor",
+    "ItemEntityMixin",
+    "ItemStackMixin",
+    "ShapedRecipeAccessor",
+    "SheepShearingMixin",
+    "client.CameraAccessor",
+    "client.ParticleManagerAccessor"
+  ],
   "client": [
+    "client.CrackParticleItemFactoryMixin",
+    "client.ParticleManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,4 +1,4 @@
-package com.chyzman.ctft.mixin;
+package com.chyzman.ctft.mixin.client;
 
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleManager;

@@ -28,7 +28,7 @@ import java.util.Random;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftShearsItem extends ShearsItem {
+public class CtftShearsItem extends ShearsItem implements CtftItem {
     public CtftShearsItem(Settings settings) {
         super(settings.maxCount(1).maxDamage(1));
     }

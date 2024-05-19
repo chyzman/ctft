@@ -28,7 +28,7 @@ import java.util.Random;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftHoeItem extends HoeItem {
+public class CtftHoeItem extends HoeItem implements CtftItem {
     public CtftHoeItem(Settings settings) {
         super(CtftMaterial.CTFT,
                 0,

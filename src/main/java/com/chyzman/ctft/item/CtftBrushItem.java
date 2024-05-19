@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Optional;
 
-public class CtftBrushItem extends BrushItem {
+public class CtftBrushItem extends BrushItem implements CtftItem {
     public CtftBrushItem(Settings settings) {
         super(settings.maxCount(1));
     }

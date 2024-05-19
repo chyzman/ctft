@@ -30,7 +30,7 @@ import java.util.Random;
 
 import static com.chyzman.ctft.registries.CtftStats.MATERIALS;
 
-public class CtftAxeItem extends AxeItem {
+public class CtftAxeItem extends AxeItem implements CtftItem {
     public CtftAxeItem(Settings settings) {
         super(CtftMaterial.CTFT,
                 0,
